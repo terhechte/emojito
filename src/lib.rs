@@ -6,7 +6,7 @@
 //! ## Usage
 //!
 //! ``` rs
-//! let content = "@zuhairali83 😘❤️! 😻💓 👨‍👩‍👦  kk 👨‍👩‍👧‍👦";
+//! let content = "Test 😘❤️! 😻💓 👨‍👩‍👦  kk 👨‍👩‍👧‍👦";
 //! let emojis = emojito::find_emoji(content);
 //! assert_eq!(emojis.len(), 6);
 //! ```
@@ -17,7 +17,7 @@ pub use emoji::Emoji;
 
 /// Find all the emoji in a string. Returns the emoji in a `Vec`.
 /// ``` rs
-/// let content = "@zuhairali83 😘❤️! 😻💓 👨‍👩‍👦  kk 👨‍👩‍👧‍👦";
+/// let content = "Test 😘❤️! 😻💓 👨‍👩‍👦  kk 👨‍👩‍👧‍👦";
 /// let emojis = emojito::find_emoji(content);
 /// assert_eq!(emojis.len(), 6);
 /// ```
@@ -66,7 +66,7 @@ mod tests {
 
     #[test]
     fn find_all() {
-        let content = "@zuhairali83 😘❤️! 😻💓 👨‍👩‍👦  kk 👨‍👩‍👧‍👦";
+        let content = "Test 😘❤️! 😻💓 👨‍👩‍👦  kk 👨‍👩‍👧‍👦";
         let emojis = find_emoji(content);
         assert_eq!(emojis.len(), 6);
         assert_eq!(emojis[0].name, "face blowing a kiss");
