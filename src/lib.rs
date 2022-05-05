@@ -1,8 +1,26 @@
+//! # Emojito
+//!
+//! Find Emoji in strings. Supports complex emoji such as 👨‍👩‍👧‍👦.
+//! Uses the `unic-emoji-char` crate in the background, and does not rely on regexes.
+//!
+//! ## Usage
+//!
+//! ``` rs
+//! let content = "@zuhairali83 😘❤️! 😻💓 👨‍👩‍👦  kk 👨‍👩‍👧‍👦";
+//! let emojis = emojito::find_emoji(content);
+//! assert_eq!(emojis.len(), 6);
+//! ```
 use emoji::lookup_by_glyph;
 use unic_emoji_char::is_emoji;
 
 pub use emoji::Emoji;
 
+/// Find all the emoji in a string. Returns the emoji in a `Vec`.
+/// ``` rs
+/// let content = "@zuhairali83 😘❤️! 😻💓 👨‍👩‍👦  kk 👨‍👩‍👧‍👦";
+/// let emojis = emojito::find_emoji(content);
+/// assert_eq!(emojis.len(), 6);
+/// ```
 pub fn find_emoji(content: impl AsRef<str>) -> Vec<&'static Emoji> {
     let zwj = '\u{200d}';
     let mut emoji_list = vec![];
