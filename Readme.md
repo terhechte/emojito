@@ -1,8 +1,8 @@
 
 [![license](https://shields.io/badge/license-MIT-green)](https://github.com/terhechte/emojito/blob/main/LICENSE.md)
 ![Rust CI](https://github.com/terhechte/emojito/actions/workflows/ci.yml/badge.svg)
-[crates.io]: https://crates.io/crates/emojito
-[![Documentation](https://docs.rs/emojito/badge.svg)][docs]
+![crates.io](https://crates.io/crates/emojito)
+![Documentation](https://docs.rs/emojito/badge.svg)
 
 # Emojito
 
