@@ -5,6 +5,10 @@
 
 # Emojito
 
+``` toml
+emojito = "0.2.1"
+```
+
 Find Emoji in strings. Supports complex emoji such as 👨‍👩‍👧‍👦.
 Uses the `unic-emoji-char` crate in the background, and does not rely on regexes.
 

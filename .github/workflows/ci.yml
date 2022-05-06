@@ -15,8 +15,7 @@ jobs:
 
         include:
           - os: ubuntu-latest
-            toolchain: nightly
-            features: pattern
+            toolchain: stable
 
           - os: windows-latest
             toolchain: stable
