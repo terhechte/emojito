@@ -9,7 +9,7 @@ readme = "README.md"
 repository = "https://github.com/terhechte/emojito"
 homepage = "https://github.com/terhechte/emojito"
 keywords = ["emoji", "string", "find", "search", "unicode"]
-categories = ["text-processing", "parsing-tools", "encoding"]
+categories = ["text-processing", "parsing", "encoding"]
 exclude = [
     "benches/tweets.json",
 ]
