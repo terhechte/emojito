@@ -1,6 +1,6 @@
 [package]
 name = "emojito"
-version = "0.3.0"
+version = "0.3.5"
 edition = "2021"
 authors = ["Benedikt Terhechte <terhechte@gmail.com>"]
 license = "MIT"
